@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="inicio">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Cliente</span><nav><a href="index.html" class="a">Inicio</a><a href="telefonos.html">Teléfonos</a><a href="enviar.html">Mensajes</a><a href="bandeja.html">Bandeja</a><a href="saldo.html">Saldo</a><a href="desvio.html">Desvío</a><a href="historial.html">Historial</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Inicio</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="row">
+<div><span class="sm">Teléfono</span><b style="font-size:20px">55 1234 5678</b><span id="estado" class="st on">● Conectado</span></div>
+<div><span class="sm">Saldo disponible</span><div class="big" id="saldo">$150.00</div></div>
+</div>
+<div class="ar"><button class="btn" id="bOn">Conectar</button><button class="btn r" id="bOff">Desconectar</button></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

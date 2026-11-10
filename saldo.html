@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldo y recarga – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="saldo">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Cliente</span><nav><a href="index.html">Inicio</a><a href="telefonos.html">Teléfonos</a><a href="enviar.html">Mensajes</a><a href="bandeja.html">Bandeja</a><a href="saldo.html" class="a">Saldo</a><a href="desvio.html">Desvío</a><a href="historial.html">Historial</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Saldo y recarga</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div><span class="sm">Saldo actual</span><div class="big" id="saldo">$150.00</div></div>
+<div class="chips"><button data-m="50">$50</button><button data-m="100">$100</button><button data-m="200">$200</button></div>
+<div class="g2"><label class="fl">Monto a recargar<input type="number" id="monto" min="1" placeholder="0.00"></label><div></div></div>
+<div class="ar"><a class="btn o" href="index.html">Cancelar</a><button class="btn" id="btn">Recargar</button></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

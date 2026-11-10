@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iniciar sesión – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><nav></nav></header>
+<main class="lg2">
+<h2>Iniciar sesión</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<label class="fl">Usuario<input type="text" id="usr" placeholder="Tu usuario"></label>
+<label class="fl">Contraseña<input type="password" id="pw" placeholder="Tu contraseña"></label>
+<label class="fl">Entrar como<select id="rol"><option value="cliente">Cliente</option><option value="admin">Administrador</option></select></label>
+<div class="ar"><button class="btn" id="btn" style="width:100%">Entrar</button></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

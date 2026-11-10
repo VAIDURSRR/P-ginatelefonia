@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="adash">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Administrador</span><nav><a href="ad-dashboard.html" class="a">Dashboard</a><a href="ad-usuarios.html">Usuarios</a><a href="ad-estadisticas.html">Estadísticas</a><a href="ad-tarifas.html">Tarifas</a><a href="ad-empleados.html">Empleados y roles</a><a href="ad-historial.html">Historial global</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Dashboard</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="row">
+<div><span class="sm">Usuarios totales</span><div class="big" id="k1">0</div></div>
+<div><span class="sm">Usuarios conectados</span><div class="big" id="k2">0</div></div>
+<div><span class="sm">Mensajes enviados</span><div class="big" id="k3">0</div></div>
+<div><span class="sm">Ingresos por mensajes</span><div class="big" id="k4">$0.00</div></div>
+</div>
+<div class="hint">Tarifa vigente ahora: <b id="rt"></b> por mensaje</div>
+<h3>Actividad reciente</h3>
+<div class="tw"><table><thead><tr><th>Fecha</th><th>Usuario</th><th>Tipo</th><th>Detalle</th></tr></thead><tbody id="lista"></tbody></table></div>
+<div class="ar"><a class="btn o" href="ad-historial.html">Ver historial global</a><a class="btn" href="ad-usuarios.html">Consultar usuarios</a></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configuración de tarifas – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="atar">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Administrador</span><nav><a href="ad-dashboard.html">Dashboard</a><a href="ad-usuarios.html">Usuarios</a><a href="ad-estadisticas.html">Estadísticas</a><a href="ad-tarifas.html" class="a">Tarifas</a><a href="ad-empleados.html">Empleados y roles</a><a href="ad-historial.html">Historial global</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Configuración de tarifas</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="hint">Tarifa vigente ahora: <b id="rt"></b> por mensaje (160 caracteres). Día: 07:00 a 22:00 · Noche: 22:00 a 07:00.</div>
+<div class="tw"><table><thead><tr><th>Días</th><th>Día (07:00–22:00)</th><th>Noche (22:00–07:00)</th></tr></thead><tbody>
+<tr><td>Lunes a viernes</td><td><input type="number" id="t1" step="0.1" min="0.1"></td><td><input type="number" id="t2" step="0.1" min="0.1"></td></tr>
+<tr><td>Sábado y domingo</td><td><input type="number" id="t3" step="0.1" min="0.1"></td><td><input type="number" id="t4" step="0.1" min="0.1"></td></tr>
+</tbody></table></div>
+<div class="ar"><a class="btn o" href="ad-dashboard.html">Cancelar</a><button class="btn" id="btn">Guardar tarifas</button></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historial global del sistema – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="ahist">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Administrador</span><nav><a href="ad-dashboard.html">Dashboard</a><a href="ad-usuarios.html">Usuarios</a><a href="ad-estadisticas.html">Estadísticas</a><a href="ad-tarifas.html">Tarifas</a><a href="ad-empleados.html">Empleados y roles</a><a href="ad-historial.html" class="a">Historial global</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Historial global del sistema</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="bar2"><input type="search" id="q" placeholder="Buscar usuario o detalle" style="flex:1;min-width:220px">
+<div class="chips"><button data-t="Todo" class="a">Todo</button><button data-t="Mensaje">Mensajes</button><button data-t="Recarga">Recargas</button><button data-t="Desvío">Desvíos</button><button data-t="Tarifa">Tarifas</button><button data-t="Empleado">Empleados</button></div></div>
+<div class="hint" id="cnt"></div>
+<div class="tw"><table><thead><tr><th>Fecha</th><th>Usuario</th><th>Tipo</th><th>Detalle</th><th>Monto</th></tr></thead><tbody id="lista"></tbody></table></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

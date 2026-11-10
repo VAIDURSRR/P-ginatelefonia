@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consulta de usuarios y su uso – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="ausr">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Administrador</span><nav><a href="ad-dashboard.html">Dashboard</a><a href="ad-usuarios.html" class="a">Usuarios</a><a href="ad-estadisticas.html">Estadísticas</a><a href="ad-tarifas.html">Tarifas</a><a href="ad-empleados.html">Empleados y roles</a><a href="ad-historial.html">Historial global</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Consulta de usuarios y su uso</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="bar2"><input type="search" id="q" placeholder="Buscar por nombre, teléfono o banco" style="flex:1;min-width:220px">
+<div class="chips"><button data-e="t" class="a">Todos</button><button data-e="c">Conectados</button><button data-e="d">Desconectados</button></div></div>
+<div class="hint" id="cnt"></div>
+<div class="tw"><table><thead><tr><th>Nombre</th><th>Teléfono</th><th>Banco</th><th>Estado</th><th>Saldo</th><th>Mensajes</th><th>Gasto</th></tr></thead><tbody id="lista"></tbody></table></div>
+<div class="ar"><a class="btn" href="ad-nuevo.html">+ Nuevo usuario</a></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

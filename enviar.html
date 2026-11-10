@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enviar mensaje – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="enviar">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Cliente</span><nav><a href="index.html">Inicio</a><a href="telefonos.html">Teléfonos</a><a href="enviar.html" class="a">Mensajes</a><a href="bandeja.html">Bandeja</a><a href="saldo.html">Saldo</a><a href="desvio.html">Desvío</a><a href="historial.html">Historial</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Enviar mensaje</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="g2">
+<label class="fl">Destinatario<input type="text" id="dest" placeholder="55 0000 0000"></label>
+<div class="fl">Costo estimado<div id="costo" style="font-size:16px;padding:9px 0;color:#2a57a6">$1.50</div></div>
+</div>
+<label class="fl">Mensaje<textarea id="txt" placeholder="Escribe tu mensaje…"></textarea></label>
+<div class="ar"><a class="btn o" href="index.html">Cancelar</a><button class="btn" id="btn">Enviar</button></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

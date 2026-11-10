@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestión de roles y empleados – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="aemp">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Administrador</span><nav><a href="ad-dashboard.html">Dashboard</a><a href="ad-usuarios.html">Usuarios</a><a href="ad-estadisticas.html">Estadísticas</a><a href="ad-tarifas.html">Tarifas</a><a href="ad-empleados.html" class="a">Empleados y roles</a><a href="ad-historial.html">Historial global</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Gestión de roles y empleados</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="tw"><table><thead><tr><th>Empleado</th><th>Correo</th><th>Rol</th><th>Acción</th></tr></thead><tbody id="lista"></tbody></table></div>
+<hr class="hr"><h3>Agregar empleado</h3>
+<div class="g2"><label class="fl">Nombre<input type="text" id="en" placeholder="Nombre completo"></label><label class="fl">Correo<input type="text" id="ec" placeholder="correo@central.mx"></label>
+<label class="fl">Rol<select id="er"><option>Administrador</option><option>Operador</option><option selected>Soporte</option></select></label><div></div></div>
+<div class="ar"><button class="btn" id="add">Agregar empleado</button></div>
+<div class="hint">Administrador: acceso total · Operador: usuarios, saldo y desvíos · Soporte: solo consulta.</div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historial de uso – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="historial">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Cliente</span><nav><a href="index.html">Inicio</a><a href="telefonos.html">Teléfonos</a><a href="enviar.html">Mensajes</a><a href="bandeja.html">Bandeja</a><a href="saldo.html">Saldo</a><a href="desvio.html">Desvío</a><a href="historial.html" class="a">Historial</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Historial de uso</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="chips"><button data-f="Todo" class="a">Todo</button><button data-f="Mensaje">Mensajes</button><button data-f="Recarga">Recargas</button><button data-f="Desvío">Desvíos</button></div>
+<div class="tw"><table><thead><tr><th>Fecha</th><th>Tipo</th><th>Detalle</th><th>Costo</th></tr></thead><tbody id="lista"></tbody></table></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

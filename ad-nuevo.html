@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registro de nuevo usuario – Central de Mensajería Móvil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="anew">
+<header><div class="logo">M</div><h1>Central de Mensajería Móvil</h1><span class="rol">Administrador</span><nav><a href="ad-dashboard.html">Dashboard</a><a href="ad-usuarios.html" class="a">Usuarios</a><a href="ad-estadisticas.html">Estadísticas</a><a href="ad-tarifas.html">Tarifas</a><a href="ad-empleados.html">Empleados y roles</a><a href="ad-historial.html">Historial global</a><a href="login.html">Salir</a></nav></header>
+<main>
+<h2>Registro de nuevo usuario</h2>
+<div id="msg" class="alert" hidden></div>
+<div class="card">
+<div class="g2">
+<label class="fl">Nombre(s)<input type="text" id="nom" placeholder="Ej. Ana María"></label>
+<label class="fl">Apellidos<input type="text" id="ape" placeholder="Ej. López García"></label></div>
+<label class="fl">Dirección<input type="text" id="dir" placeholder="Calle, número, colonia, municipio"></label>
+<div class="g2">
+<label class="fl">Número de teléfono<input type="text" id="tel" placeholder="55 0000 0000"></label>
+<label class="fl">Banco<input type="text" id="ban" placeholder="Nombre del banco"></label>
+<label class="fl">Número de tarjeta / cuenta<input type="text" id="tar" placeholder="XXXX XXXX XXXX XXXX"></label>
+<label class="fl">Correo electrónico<input type="text" id="mail" placeholder="correo@ejemplo.com"></label></div>
+<div class="ar"><a class="btn o" href="ad-usuarios.html">Cancelar</a><button class="btn" id="btn">Registrar</button></div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
